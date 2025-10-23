@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { useBudget } from '../contexts/BudgetContext';
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip, BarChart, Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
+import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, BarChart, Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
 import { formatCurrency } from '../utils/calculations';
 
 export const SpendingChart: React.FC = () => {
@@ -57,7 +57,7 @@ export const SpendingChart: React.FC = () => {
               cx="50%"
               cy="50%"
               labelLine={false}
-              label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+              label={(entry: any) => `${entry.name} ${(entry.percent * 100).toFixed(0)}%`}
               outerRadius={100}
               fill="#8884d8"
               dataKey="value"

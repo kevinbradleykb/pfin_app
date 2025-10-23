@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { BudgetProvider } from './contexts/BudgetContext';
 import { Dashboard } from './components/Dashboard';
 import { TransactionForm } from './components/TransactionForm';
 import { TransactionList } from './components/TransactionList';
 import { CategoryBudget } from './components/CategoryBudget';
 import { SpendingChart } from './components/SpendingChart';
-import { Wallet, LayoutDashboard, PieChart, List, Settings } from 'lucide-react';
+import { Wallet, LayoutDashboard, PieChart, List } from 'lucide-react';
 
 type Tab = 'dashboard' | 'transactions' | 'budget' | 'analytics';
 

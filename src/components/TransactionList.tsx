@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { useBudget } from '../contexts/BudgetContext';
 import { formatCurrency } from '../utils/calculations';
 import { format } from 'date-fns';
-import { Trash2, Filter, ArrowUpCircle, ArrowDownCircle } from 'lucide-react';
+import { Trash2, ArrowUpCircle, ArrowDownCircle } from 'lucide-react';
 
 export const TransactionList: React.FC = () => {
   const { transactions, categories, deleteTransaction } = useBudget();
