@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { BudgetProvider } from './contexts/BudgetContext';
 import { Dashboard } from './components/Dashboard';
-import { TransactionForm } from './components/TransactionForm';
+import { PlaidButtons } from './components/PlaidButtons';
 import { TransactionList } from './components/TransactionList';
 import { CategoryBudget } from './components/CategoryBudget';
 import { SpendingChart } from './components/SpendingChart';
@@ -39,7 +39,7 @@ function App() {
                   </p>
                 </div>
               </div>
-              <TransactionForm />
+              <PlaidButtons />
             </div>
           </div>
         </header>

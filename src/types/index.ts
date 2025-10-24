@@ -8,6 +8,9 @@ export interface Transaction {
   isRecurring?: boolean;
   recurringFrequency?: 'daily' | 'weekly' | 'monthly' | 'yearly';
   excludeFromBudget?: boolean;
+  reviewed?: boolean;
+  merchantName?: string;
+  originalDescription?: string;
 }
 
 export interface Category {
